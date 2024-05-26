@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+.playfair-display-about {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* You can adjust this value to your desired weight (400 to 900) */
+  font-style: normal;
+}
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Adding a background color for visibility */
+}
+
+.nav-flex-row li {
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-flex-row li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+
+.section-intro {
+    height: 800px;
+    background-image: url('Images/serge-esteve-klXhDG8Roj4-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 5;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+    text-align: center; 
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.about-section p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    text-transform: none; /* Ensure text is in its normal case */
+}
+
+.carousel-inner {
+    height: 900px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 30px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn.btn-primary {
+    font-family: 'Playfair Display', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 0,9;
+    margin: 30px 10px;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
